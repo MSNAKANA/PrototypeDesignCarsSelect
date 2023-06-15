@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_new"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_new_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PrototypeDesignCarsSelect"
+        tools:targetApi="31">
+        <activity
+            android:name=".SetGoals"
+            android:exported="false" />
+        <activity
+            android:name=".Archivements"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCars"
+            android:exported="false" />
+        <activity
+            android:name=".FilterCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AdapterCategory"
+            android:exported="false" />
+        <activity
+            android:name=".AddCategory"
+            android:exported="false" />
+        <activity
+            android:name=".Login2"
+            android:exported="false" />
+        <activity
+            android:name=".exit"
+            android:exported="false" />
+        <activity
+            android:name=".Category"
+            android:exported="false" />
+        <activity
+            android:name=".SearchOrUpload"
+            android:exported="false" />
+        <activity
+            android:name=".YourChoice"
+            android:exported="false" />
+        <activity
+            android:name=".CarsSelectSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cars"
+    tools:context=".YourChoice">
+
+    <!--adding header-->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center">
+        <!--adding text view for header-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Add Cars"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <!--adding text input layout-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="60dp"
+        app:hintEnabled="false">
+
+        <!--edit text for recipe name-->
+        <EditText
+            android:id="@+id/recipeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTIL"
+            android:layout_margin="10dp"
+            android:background="#70ffffff"
+            android:drawablePadding="10dp"
+            android:hint="Car Name"
+            android:padding="10dp"
+            android:inputType="textPersonName|textCapWords"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Input recipe instructions-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/descriptionTIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@id/titleTIL"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="false">
+
+        <EditText
+            android:id="@+id/recipeDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#70ffffff"
+
+            android:drawablePadding="15dp"
+            android:hint="Cars Year"
+            android:padding="10dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textSize="16sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Pick category from dialog-->
+    <TextView
+        android:id="@+id/pickCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionTIL"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#70ffffff"
+
+        android:drawablePadding="15dp"
+        android:padding="10dp"
+        android:hint="Cars Category"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+
+        />
+    <!--button for capturing image-->
+    <Button
+        android:id="@+id/captureBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seeImage"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Click to select image"
+        android:textColor="@color/white"/>
+
+    <!--image view for displaying picture-->
+    <ImageView
+        android:id="@+id/seeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickCat"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <!--button for uploading recipe-->
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captureBtn"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Upload"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/setgoalsbtn"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/captureBtn"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="109dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Set Goals"
+        android:textColor="@color/white" />
+</RelativeLayout>

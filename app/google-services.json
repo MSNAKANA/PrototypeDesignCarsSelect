@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642153712701",
+    "project_id": "prototypedesigncarsselect",
+    "storage_bucket": "prototypedesigncarsselect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642153712701:android:21a7e6d1afd9f41fd46e54",
+        "android_client_info": {
+          "package_name": "com.example.prototypedesigncarsselect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642153712701-44eer56bum7hl2r50e70p4jdlnsq6hbn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjjtHwk3cm9KATDfJw8OrrGHXNd_6cRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642153712701-44eer56bum7hl2r50e70p4jdlnsq6hbn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

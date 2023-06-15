@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cars"
+    tools:context=".SetGoals">
+
+    <!--adding header-->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        >
+        <!--adding text view for header-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:text="Set Cars Goals"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <!--adding content-->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="3dp">
+
+        <TextView
+            android:id="@+id/setgoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="left"
+            android:text="Set Cars goals for each category"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            />
+        <!--adding textview for title-->
+        <EditText
+
+            android:id="@+id/category1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setgoals"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#70ffffff"
+            android:hint="Set goal for category"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <ProgressBar
+            android:id="@+id/numcars"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="281dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/category1"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="54dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:text="no.of recipes" />
+
+        <Button
+            android:id="@+id/setgoalsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="371dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:text="Set Goals"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

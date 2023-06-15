@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cars"
+    tools:context=".Archivements">
+
+
+    <!--adding header-->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background"
+        android:gravity="center"
+        >
+        <!--adding text view for header-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+
+            android:text="Achievements"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <!--adding content-->
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="3dp">
+
+
+        <EditText
+
+            android:id="@+id/category1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#70ffffff"
+            android:hint="Enter category 1"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/numofrecipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category1"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="16dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:text="view no. of recipes"
+            android:textColor="@color/white" />
+
+        <EditText
+
+            android:id="@+id/category2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numofrecipes"
+            android:layout_margin="10dp"
+            android:background="#70ffffff"
+            android:hint="Enter category 2"
+            android:padding="15dp"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/numofrecipes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/category2"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="25dp"
+            android:ems="8"
+            android:inputType="textPersonName"
+            android:text="view no. of recipes"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
